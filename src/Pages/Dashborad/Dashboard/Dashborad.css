@@ -1,0 +1,11 @@
+.listStyle{
+ list-style: none;
+ font-size: 15px;
+ font-weight: bold;
+ text-decoration: none;
+ letter-spacing: 2px;
+ color: white;
+}
+.Link {
+    text-decoration: none;
+}
