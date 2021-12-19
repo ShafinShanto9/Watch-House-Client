@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Col, Image, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+import "./Header.css";
 
 const Header = () => {
-    return (
-        <div className="mb-5">
+    return (  
+            <Container classname="header-bg mb-5 mt-5">
             <Row>
                 <Col sm={12} md={6}
                  className="d-flex justify-content-center align-items-center">
@@ -15,10 +16,11 @@ const Header = () => {
                     </div>
                 </Col>
                 <Col sm={12} md={6}>
-                    <Image w-100 src = "https://i.ibb.co/BjSRPNJ/banner1.jpg" fluid></Image>
+                    <Image w-100 src = "https://i.ibb.co/w4svLH8/NOMOS-Glash-tte.jpg" fluid></Image>     
                 </Col>
             </Row>
-        </div>
+            </Container>
+        
     );
 };
 
