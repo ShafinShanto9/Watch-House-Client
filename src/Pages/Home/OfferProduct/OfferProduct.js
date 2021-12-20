@@ -3,6 +3,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Link } from 'react-router-dom';
+import "./OfferProduct.css";
 
 const OfferProduct = () => {
     const [OfferProduct, setOfferProduct] = useState([])
@@ -18,18 +19,24 @@ const OfferProduct = () => {
            <Container>
            {OfferProduct.length === 0 ? <div  className="d-flex justify-content-center h-100" >
                 <Loader
-                type="Circles"
+                type="Watch"
                 color="Black"
                 height={500}
                 width={100}
                
             />
             </div> : <div>
-            <h1 className ="text-center">Discount  Products</h1>
-              <Row xs={1} md={2} className="g-4 mt-5 ">
+            <div className="container mt-5 p-5">
+                <h1 className="neonText">
+                    Discount 40% off
+                </h1>
+                <h2 class="neonText">Now through Aug. 1</h2> 
+
+            </div>
+              <Row xs={1} md={3} className="g-4 mt-5 ">
                 {
-                      OfferProduct.slice(4, 6).map(pd => (
-                        <Col>  
+                      OfferProduct.slice(3, 6).map(pd => (
+                       <Col> 
                         <Card className="h-100 p-4 shadow-3">
                         
                             <Card.Img variant="top" src={pd.image}

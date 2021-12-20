@@ -17,7 +17,7 @@ const HomeProduct = () => {
            <Container>
            {homeProduct.length === 0 ? <div  className="d-flex justify-content-center h-100" >
                 <Loader
-                type="Circles"
+                type="Watch"
                 color="Black"
                 height={500}
                 width={100}
