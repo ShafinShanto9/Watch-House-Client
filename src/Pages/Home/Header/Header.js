@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
     return (  
-            <Container classname="header-bg mb-5 mt-5">
+            <Container classname="mb-5 mt-5 " >
             <Row>
                 <Col sm={12} md={6}
                  className="d-flex justify-content-center align-items-center">
